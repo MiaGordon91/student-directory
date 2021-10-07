@@ -11,3 +11,4 @@ puts "Freddy Krueger"
 puts "The Joker"
 puts "Joffrey Baratheon"
 puts "Norman Bates"
+print "Overall, we have\n11\ngreat students" #has to be in double quotes for new line
