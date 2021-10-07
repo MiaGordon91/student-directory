@@ -1,13 +1,23 @@
-student = ["Dr. Hannibal Lecter", "Darth Vader", "Nurse Ratched", "Michael Corleone" , 
+
+students = ["Dr. Hannibal Lecter", "Darth Vader", "Nurse Ratched", "Michael Corleone" , 
           "Alex DeLarge", "The Wicked Witch of the West", "Terminator", "Freddy Krueger", 
           "The Joker", "Joffrey Baratheon", "Norman Bates"]
 
-puts "The students of Villains Academy"
-puts "----------------"
-
-student.each do |student|
-  puts student 
+def print_header
+  puts "The students of Villains Academy" 
+  puts "----------------"
 end 
 
-puts "Overall, we have #{student.count} great students" 
+def print_students(name)
+  name.each do |x|
+    puts x
+  end 
+end 
 
+def print_footer(students)
+  puts "Overall, we have #{students.count} great students" 
+end 
+
+print_header
+print_students(students)
+print_footer(students)
